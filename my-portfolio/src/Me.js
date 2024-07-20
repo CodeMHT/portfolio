@@ -1,49 +1,10 @@
-import { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import emailjs from '@emailjs/browser'
+import image from "./image (1).png"
 
-
-const Contact = () => {
-
-    const [email, setEmail] = useState({
-        name: "",
-        mail: "",
-        text: ""
-    });
-
-    const TempEmail = {
-        from_name: email.name,
-        from_email: email.mail,
-        to_name: 'Mhlaba',
-        message: email.message
-
-    }
-
-    //System Response to form submission
-    const [message, setMessage] = useState();
-    const [errorMessage, setErrorMessage] = useState();
-
-    const Submit = (event) => {
-        event.preventDefault()
-        emailjs
-            .send('service_c49ah4q', 'template_2h74a5v', TempEmail, 'VunDcHdYxVzCgZmBy')
-            .then(
-                () => {
-                    setEmail({})
-                    setMessage("Mhlabunzima Has Received your Email")
-
-                },
-                (error) => {
-                    setErrorMessage("Failed to send Email");
-                },
-            );
-
-
-
-    }
+const Me = () => {
 
     return (
-
         <main id="page-top">
             {/**Navigation*/}
             <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -56,55 +17,40 @@ const Contact = () => {
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="/">Home</a></li>
-                            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="/me">About</a></li>
                             <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="/portfolio">Portfolio</a></li>
+                            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="/contact">Contact</a></li>
+
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <section className="page-section" id="contact" style={{ marginTop: 50 }}>
+            {/**About Section*/}
+            <section className="page-section bg-primary text-white mb-0" id="about" style={{ marginTop: 50 }}>
                 <div className="container">
 
-                    <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0" >Contact Me</h2>
+                    <h2 className="page-section-heading text-center text-uppercase text-white">About</h2>
 
-                    <div className="divider-custom">
+                    <div className="divider-custom divider-light">
                         <div className="divider-custom-line"></div>
                         <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
                         <div className="divider-custom-line"></div>
                     </div>
 
-                    {/**Contact Form */}
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8 col-xl-7">
+                    <div class="row " >
+                        <div class="column ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
+                        <div class="col-lg-4 me-auto"><a href="https://www.linkedin.com/in/mhlabunzima-gwala-a56b30274/"><img class="mepage" src={image} alt="..." style={{ height: 400, width: 400 }} /></a></div>
+                    </div>
 
-                            <form id="contactForm" onSubmit={Submit}>
-                                {/**Name */}
-                                <div className="form-floating mb-3">
-                                    <input className="form-control" id="name" type="text" placeholder="Enter your name..." required onChange={e => setEmail({ ...email, name: e.target.value })} />
-                                    <label htmlFor="name">Full name</label>
-                                </div>
-
-                                {/**Email */}
-                                <div className="form-floating mb-3">
-                                    <input className="form-control" id="email" type="email" placeholder="name@example.com" required onChange={e => setEmail({ ...email, mail: e.target.value })} />
-                                    <label htmlFor="email">Email address</label>
-                                </div>
-
-                                {/**Message */}
-                                <div className="form-floating mb-3">
-                                    <textarea className="form-control" id="message" type="text" placeholder="Enter your message here..." required onChange={e => setEmail({ ...email, text: e.target.value })} ></textarea>
-                                    <label htmlFor="message">Message</label>
-                                </div>
-
-                                <button className="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
-                                <p className="fw-bolder">{message}</p>
-                                <p className="text-danger">{errorMessage}</p>
-                            </form>
-                        </div>
+                    <div className="text-center mt-4">
+                        <a className="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                            <i className="fas fa-download me-2"></i>
+                            Free Download!
+                        </a>
                     </div>
                 </div>
             </section>
+
 
             {/** Footer */}
             <footer className="footer text-center">
@@ -137,8 +83,9 @@ const Contact = () => {
             <div className="copyright py-4 text-center text-white">
                 <div className="container"><small>Copyright &copy; <a href="https://www.linkedin.com/in/mhlabunzima-gwala-a56b30274/">MHT Gwala</a></small></div>
             </div>
+
         </main>
     )
 }
 
-export default Contact;
+export default Me;

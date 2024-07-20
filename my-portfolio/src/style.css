@@ -679,6 +679,13 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
+.par{
+  text-align: center;
+  margin-top: 50%;
+  color: var(--bs-accordion-bg)
+}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -1285,6 +1292,17 @@ progress {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+  }
+  .column{
+    
+    text-align: left;
+    margin-top: 10%;
+    width: 33.33333333%;
+  }
+
+  .mepage:hover{
+    transition: transform .5s;
+  transform: scale(1.1);
   }
   .col-lg-5 {
     flex: 0 0 auto;
