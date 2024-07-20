@@ -491,6 +491,9 @@ progress {
   font-size: 1.25rem;
   font-weight: 300;
 }
+.par1{
+  margin-top: -12px;
+}
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
@@ -7965,6 +7968,7 @@ textarea.form-control-lg {
 
 .fw-bolder {
   font-weight: bolder !important;
+  color:var(--bs-teal)
 }
 
 .lh-1 {
@@ -8060,6 +8064,7 @@ textarea.form-control-lg {
 }
 
 .text-danger {
+  font-weight: bold;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
 }
@@ -10978,9 +10983,10 @@ html {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
-.masthead .masthead-avatar {
+.masthead .masthead-avatar{
   width: 15rem;
 }
+
 
 @media (min-width: 992px) {
   .masthead {

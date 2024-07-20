@@ -9,6 +9,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 //Page Imports
 import Home from './Home';
 import About from './About';
+import Contact from './Contact';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element-={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   )
