@@ -491,6 +491,15 @@ progress {
   font-size: 1.25rem;
   font-weight: 300;
 }
+.pbar{
+  width: 75%;
+  height: 25px;
+  
+}
+.lead2{
+  font-size: 1.2rem;
+  font-weight: 330
+}
 .par1{
   margin-top: -12px;
 }
@@ -10894,6 +10903,10 @@ html {
 }
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
+}
+
+.custom-line{
+ background-color: var(--bs-teal)
 }
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff;
