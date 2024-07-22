@@ -15,7 +15,7 @@ const Contact = () => {
         from_name: email.name,
         from_email: email.mail,
         to_name: 'Mhlaba',
-        message: email.message
+        message: email.text
 
     }
 
