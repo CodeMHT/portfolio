@@ -266,6 +266,7 @@ samp {
   font-size: 1em;
 }
 
+
 pre {
   display: block;
   margin-top: 0;
@@ -11094,4 +11095,8 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+.layout{
+  display: flex;
+  justify-content: center;
 }

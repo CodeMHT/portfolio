@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import image from "./image (1).png"
+import logo from "./codecamp.jpg"
 
 const Me = () => {
 
@@ -47,7 +48,7 @@ const Me = () => {
 
             <section className="page-section" style={{ width: 1400 }}>
 
-                <h2 className=".masthead-subheading text-center" style={{ color: "teal" }}>Skills</h2>
+                <h2 className=".masthead-subheading text-center" style={{ color: "teal", textDecoration: "underline" }}>Skills</h2>
 
                 {/**Skills */}
                 <div className="row">
@@ -89,8 +90,28 @@ const Me = () => {
                     </div>
                 </div>
             </section>
+            <section className="page-section" style={{ width: 1400 }}>
 
+                <h2 className=".masthead-subheading text-center" style={{ color: "teal", textDecoration: "underline" }}>Certifications</h2>
+                {/**<table className="table layout">
+                    <thead>
+                        <tr>
+                            <th scope="col">.</th>
+                            <th scope="col">Details</th>
+                            <th scope="col">Certification</th>
+                        </tr>
+                    </thead>
+                    <tbody className="tbody">
+                        <tr>
+                            <th scope="row"><img src={logo} alt="FCC" width={40} height={40} /></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
 
+                    </tbody>
+                </table>*/}
+
+            </section>
             {/** Footer */}
             <footer className="footer text-center">
                 <div className="container">

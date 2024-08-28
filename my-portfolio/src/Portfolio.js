@@ -43,7 +43,7 @@ const Portfolio = () => {
                     {/** Portfolio Items*/}
                     <div className="row justify-content-center">
                         {/**Portfolio Item*/}
-                        <div className="col-md-6 col-lg-4 mb-5">
+                        <div className="col-md-6 col-lg-4 mb-5" disabled={true}>
                             <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                                 <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center"><h5 className="portfolio-heading">Cookie Treats</h5></div>
@@ -51,6 +51,7 @@ const Portfolio = () => {
                                 <a href="https://cookietreats.co.za"><img className="img-fluid mepage" src={cookie} alt="..." /></a>
                             </div>
                             <p className="portfolio-paragraph">A website designed to help women with their vaginal health. The website represents a vaginal spa with information and contact details</p>
+
                         </div>
 
                         {/**Portfolio Item*/}
@@ -62,6 +63,7 @@ const Portfolio = () => {
                                 <a href="https://carrental-service-l4ls.onrender.com/"><img className="img-fluid mepage" src={api} alt="..." /></a>
                             </div>
                             <p className="portfolio-paragraph">An api designed to handle the flow of information between the XDRIVE site and the XDRIVE database. NOTE API might take a up to 60 seconds to load </p>
+                            <h6 style={{ color: "red" }}>REQUIRES DATABASE RENEWAL</h6>
                         </div>
 
                         {/**Portfolio Item*/}
@@ -73,6 +75,7 @@ const Portfolio = () => {
                                 <a href="https://xdriverentals.onrender.com/"><img className="img-fluid mepage" src={xdrive} alt="..." /></a>
                             </div>
                             <p className="portfolio-paragraph">A vehicle rental site (specifically bmw) whcih allows user to view the website from the customer and admin side. Uses the API previously mentioned</p>
+                            <h6 style={{ color: "red" }}>REQUIRES DATABASE RENEWAL</h6>
                         </div>
 
                     </div>
