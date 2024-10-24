@@ -58,24 +58,22 @@ const Portfolio = () => {
                         <div className="col-md-6 col-lg-4 mb-5">
                             <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                                 <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div className="portfolio-item-caption-content text-center"><h5 className="portfolio-heading">XDRIVE rentals API</h5></div>
+                                    <div className="portfolio-item-caption-content text-center"><h5 className="portfolio-heading">Xclusive rentals API</h5></div>
                                 </div>
-                                <a href="https://carrental-service-l4ls.onrender.com/"><img className="img-fluid mepage" src={api} alt="..." /></a>
+                                <a href="https://two024uj.onrender.com/"><img className="img-fluid mepage" src={api} alt="..." /></a>
                             </div>
-                            <p className="portfolio-paragraph">An api designed to handle the flow of information between the XDRIVE site and the XDRIVE database. NOTE API might take a up to 60 seconds to load </p>
-                            <h6 style={{ color: "red" }}>REQUIRES DATABASE RENEWAL</h6>
+                            <p className="portfolio-paragraph">An api designed to handle the flow of information between the Xclusive site and the Xclusive database. NOTE API might take a up to 60 seconds to load </p>
                         </div>
 
                         {/**Portfolio Item*/}
                         <div className="col-md-6 col-lg-4 mb-5">
                             <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                                 <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div className="portfolio-item-caption-content text-center"><h5 className="portfolio-heading">XDRIVE rentals</h5></div>
+                                    <div className="portfolio-item-caption-content text-center"><h5 className="portfolio-heading">Xclusive rentals</h5></div>
                                 </div>
-                                <a href="https://xdriverentals.onrender.com/"><img className="img-fluid mepage" src={xdrive} alt="..." /></a>
+                                <a href="https://two024uj-site.onrender.com/"><img className="img-fluid mepage" src={xdrive} alt="..." /></a>
                             </div>
-                            <p className="portfolio-paragraph">A vehicle rental site (specifically bmw) whcih allows user to view the website from the customer and admin side. Uses the API previously mentioned</p>
-                            <h6 style={{ color: "red" }}>REQUIRES DATABASE RENEWAL</h6>
+                            <p className="portfolio-paragraph">A vehicle rental service which allows customers to book a vehicle and allows admin to manage bookings and their fleet of vehicles</p>
                         </div>
 
                     </div>

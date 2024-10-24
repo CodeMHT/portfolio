@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import image from "./image (1).png"
-import logo from "./codecamp.jpg"
+//import logo from "./codecamp.jpg"
 
 const Me = () => {
 
