@@ -71,7 +71,7 @@ const Portfolio = () => {
                                 <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center"><h5 className="portfolio-heading">Xclusive rentals</h5></div>
                                 </div>
-                                <a href="https://two024uj-site.onrender.com/"><img className="img-fluid mepage" src={xdrive} alt="..." /></a>
+                                <a href="https://xclusiverentals.onrender.com/"><img className="img-fluid mepage" src={xdrive} alt="..." /></a>
                             </div>
                             <p className="portfolio-paragraph">A vehicle rental service which allows customers to book a vehicle and allows admin to manage bookings and their fleet of vehicles</p>
                         </div>
